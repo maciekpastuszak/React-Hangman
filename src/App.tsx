@@ -1,4 +1,7 @@
 import { useState } from "react"
+import { HangmanDrawing } from "./HangmanDrawing"
+import { HangmanWord } from "./HangmanWord"
+import { Keyboard } from "./Keyboard"
 import words from "./wordList.json"
 
 function App() {
@@ -20,9 +23,9 @@ function App() {
       Lose
       Win
     </div>
-    {/* <HangmanDrawing />
+    <HangmanDrawing />
     <HangmanWord />
-    <Keyboard /> */}
+    <Keyboard />
   </div>
 }
 export default App
