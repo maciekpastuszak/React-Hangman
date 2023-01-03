@@ -59,6 +59,7 @@ export function Keyboard({activeLetters, inactiveLetters, addGuessedLetter} : Ke
       className={`${styles.btn} 
       ${isActive ? styles.active : ""} 
       ${isInactive ? styles.inactive : ""}`} 
+      disabled={isInactive || isActive}
       key={key}>{key}</button>
 })}
     </div>
